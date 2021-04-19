@@ -16,6 +16,8 @@ import Notification20 from "@carbon/icons/es/notification/20";
 import UserAvatar20 from "@carbon/icons/es/user--avatar/20";
 import AppSwitcher20 from "@carbon/icons/es/app-switcher/20";
 import { HeaderComponent } from "./header/header.component";
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
 
 // import { RepositoriesComponent } from './repositories/repositories.component';
 
@@ -27,7 +29,9 @@ import { HeaderComponent } from "./header/header.component";
     InputModule,
     AppRoutingModule,
     UIShellModule,
-    IconModule
+    IconModule,
+    GraphQLModule,
+    HttpClientModule
   ],
   declarations: [
     AppComponent,
