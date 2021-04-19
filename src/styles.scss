@@ -1,0 +1,6 @@
+/* Add application styles & imports to this file! */
+@import "./assets/scss/carbon-overrides.scss";
+@import "carbon-components/css/carbon-components.min.css";
+$feature-flags: (
+  grid-columns-16: true
+);
