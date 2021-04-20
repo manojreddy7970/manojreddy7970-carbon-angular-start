@@ -32,8 +32,12 @@
   }
 }
 
+.landing-page__illo {
+  max-width: 100%;
+}
+
 @mixin landing-page-background() {
-  background-color: $ui-04;
+  background-color: $ui-01;
   position: relative;
   &::before {
     content: "";
@@ -47,9 +51,10 @@
   }
 }
 
-.landing-page__illo {
-  max-width: 100%;
-}
+// .bx--grid{
+//   padding-right: 0rem;
+//   padding-left: 0rem;
+// }
 
 .landing-page__banner {
   padding-top: $spacing-05;
@@ -70,11 +75,11 @@
   padding-bottom: $layout-05;
 }
 .landing-page__subheading {
-  @include carbon--type-style('productive-heading-03');
-  @include carbon--font-weight('semibold');
+  @include carbon--type-style("productive-heading-03");
+  @include carbon--font-weight("semibold");
 }
 .landing-page__p {
-  @include carbon--type-style('productive-heading-03');
+  @include carbon--type-style("productive-heading-03");
   margin-top: $spacing-06;
   margin-bottom: $spacing-08;
   @include carbon--breakpoint-between((320px + 1), md) {
@@ -88,5 +93,10 @@
   @include landing-page-background;
 }
 .landing-page__label {
-  @include carbon--type-style('heading-01');
+  @include carbon--type-style("heading-01");
 }
+
+// .bx--grid--full-width {
+//   padding-left: 1rem;
+//   padding-right: 1rem;
+// }
